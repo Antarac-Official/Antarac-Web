@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.varunvaru524.antarac",
+      "sha256_cert_fingerprints": [
+        "C8:14:AD:12:B7:BB:55:54:43:D4:16:84:BD:CF:AC:6F:E9:0A:5C:99:0B:18:D5:69:BD:74:23:A7:F6:5F:FF:AD"
+      ]
+    }
+  }
+]
