@@ -1,10 +1,14 @@
-import styles from './App.module.css';
-import image from './assets/Antarac-website.png'
+import { useEffect } from 'react';
+
 
 function App() {
+  useEffect(() => {
+    window.location.href = 'https://antarac.framer.website/'
+  }, [])
   return (
-    <img src={image} className={styles.img} alt="Antarac" />
+    <></>
   )
 }
+
 
 export default App
