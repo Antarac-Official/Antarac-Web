@@ -1,0 +1,24 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "D73T3222N8.com.varunvaru524.antarac",
+        "paths": [
+          "/activity/*",
+          "/profile/*"
+        ]
+      }
+    ]
+  },
+  "activitycontinuation": {
+    "apps": [
+      "D73T3222N8.com.varunvaru524.antarac"
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "D73T3222N8.com.varunvaru524.antarac"
+    ]
+  }
+}
