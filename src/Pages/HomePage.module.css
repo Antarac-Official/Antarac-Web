@@ -52,7 +52,6 @@ body {
 .rightLogoContainer {
   width: 50%;
   max-width: 460px;
-  /* This is the original width in Figma */
   height: auto;
 }
 
@@ -86,8 +85,6 @@ body {
   color: #00C2ED;
   font-size: clamp(7px, 1.5vw, 14px);
 }
-
-.formElement {}
 
 .formDescriptionContainer {
   display: inline-block;
@@ -158,9 +155,10 @@ body {
 }
 
 .footerRightInfo {
-height: 18px;
+  height: 18px;
 }
-.linkedinLogo{
+
+.linkedinLogo {
   height: 18px;
 }
 
@@ -181,11 +179,7 @@ height: 18px;
     padding: 30px;
   }
 
-  .footerNavText {
-
-  }
-
-  .footerRightInfo{
+  .footerRightInfo {
     padding: 30px;
     position: absolute;
     bottom: 53px;
