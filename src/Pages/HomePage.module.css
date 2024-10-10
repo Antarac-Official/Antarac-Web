@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.insideMain {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.mainLeftContainer {
+  width: 50%;
+}
+
+.mockupDesktop {
+  width: 80%;
+  height: auto;
+  max-width: 589.95px;
+}
+
+.mainRightContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.insideRightContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+.rightLogoContainer {
+  width: 50%;
+  max-width: 460px;
+  /* This is the original width in Figma */
+  height: auto;
+}
+
+.rightInfo {
+  font-weight: 400;
+  font-size: clamp(16px, 2.5vw, 32px);
+  font-family: 'Inter', sans-serif;
+}
+
+.availableSoonContainer {
+  height: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.availableSoonStrik {
+  height: 2px;
+  background-color: #00C2ED;
+  flex-grow: 1;
+}
+
+.availableSoonText {
+  position: absolute;
+  background-color: white;
+  left: 12px;
+  letter-spacing: 8px;
+  padding-left: 8px;
+  font-family: 'Inter', sans-serif;
+  color: #00C2ED;
+  font-size: clamp(7px, 1.5vw, 14px);
+}
+
+.formElement {}
+
+.formDescriptionContainer {
+  display: inline-block;
+  border-radius: 24px 24px 0px 0px;
+  background-color: #EEEEEF;
+  padding: 12px 18px 12px 18px;
+  width: 57%;
+  max-width: 413.95px;
+}
+
+.formDescription {
+  font-size: clamp(7px, 2.5vw, 14px);
+  font-family: 'Inter', sans-serif;
+  color: #737373;
+}
+
+.formInput {
+  height: 22px;
+  padding: 4px 8px 4px 8px;
+  border-radius: 8px 0px 0px 8px;
+  border: 1px solid black;
+  width: 60%;
+  max-width: 413.95px;
+}
+
+.submitButton {
+  color: white;
+  background-color: black;
+  height: 31px;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0px 8px 8px 0px;
+}
+
+
+.footerContainer {
+  height: 54px;
+  border-top: 1px solid #DEDEDF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 16px 0px 16px;
+  position: relative;
+}
+
+.footerLeftInfo {
+  font-size: 16px;
+  color: #B2B2B2;
+  font-weight: 500;
+}
+
+.footerCenterInfo {
+  position: absolute;
+  background-color: transparent;
+  width: 96%;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.footerNavText {
+  font-size: 16px;
+  color: #B2B2B2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footerRightInfo {
+height: 18px;
+}
+.linkedinLogo{
+  height: 18px;
+}
+
+
+
+/* Mobile version */
+@media (width <=700px) {
+  .footerContainer {
+    height: 190px;
+    padding: 0px;
+  }
+
+  .footerCenterInfo {
+    flex: 1;
+    top: 0px;
+    justify-content: start;
+  }
+
+  .footerNavText {
+    padding: 30px;
+  }
+  .footerRightInfo{
+    padding: 30px;
+  }
+
+  .footerLeftInfo {
+    position: absolute;
+    padding-bottom: 30px;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
