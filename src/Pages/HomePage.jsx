@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import styles from './HomePage.module.css'
 import mockupDesktop from '../assets/mockupDesktop.png';
 import antaracFullLogo from '../assets/fullLogo.svg';
@@ -43,6 +44,7 @@ function HomePage() {
           <div className={styles.footerLeftInfo}>© 2024 Antarac Social Pvt Ltd</div>
           <div className={styles.footerCenterInfo}>
             <a href="" className={styles.footerNavText}>Careers</a>
+            <Link to="/contact" className={styles.footerNavText}>Contact</Link>
           </div>
           <div className={styles.footerRightInfo}>
             <img src={linkedinLogo} alt="Linkedin Logo" className={styles.linkedinLogo} />

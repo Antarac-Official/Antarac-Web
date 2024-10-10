@@ -169,21 +169,26 @@ height: 18px;
 /* Mobile version */
 @media (width <=700px) {
   .footerContainer {
-    height: 190px;
+    height: 230px;
     padding: 0px;
   }
 
   .footerCenterInfo {
-    flex: 1;
     top: 0px;
-    justify-content: start;
+    flex-direction: column;
+    width: 80%;
+    gap: 30px;
+    padding: 30px;
   }
 
   .footerNavText {
-    padding: 30px;
+
   }
+
   .footerRightInfo{
     padding: 30px;
+    position: absolute;
+    bottom: 53px;
   }
 
   .footerLeftInfo {
