@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from './ContactPage.module.css'
 import antaracFullLogo from '../assets/fullLogo.svg';
 import linkedinLogo from '../assets/linkedinLogo.svg';
+import ContactUsCard from '../Components/ContactUsCard';
 
 const ContactPage = () => {
   return (
@@ -12,6 +13,9 @@ const ContactPage = () => {
         <div className={styles.contactusContainer}>
           <div className={styles.contactusStrik}></div>
           <div className={styles.contactusText}>Contact Us</div>
+        </div>
+        <div className={styles.cardContainer}>
+          <ContactUsCard />
         </div>
       </main>
       <footer className={styles.footer}>
