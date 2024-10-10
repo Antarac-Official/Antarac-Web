@@ -4,6 +4,9 @@ import styles from './ContactPage.module.css'
 import antaracFullLogo from '../assets/fullLogo.svg';
 import linkedinLogo from '../assets/linkedinLogo.svg';
 import ContactUsCard from '../Components/ContactUsCard';
+import phoneIcon from '../assets/phoneIcon.svg';
+import mailIcon from '../assets/mailIcon.svg';
+import locationIcon from '../assets/locationIcon.svg';
 
 const ContactPage = () => {
   return (
@@ -15,7 +18,9 @@ const ContactPage = () => {
           <div className={styles.contactusText}>Contact Us</div>
         </div>
         <div className={styles.cardContainer}>
-          <ContactUsCard />
+          <ContactUsCard icon={phoneIcon} mainInfo={'Call'} subInfo='All days 11am to 5pm.' contactDetails='+91 91102 68071'style={{width:'70%'}} />
+          <ContactUsCard icon={mailIcon} mainInfo={'Email'} subInfo={`Let's connect.`} contactDetails='admin@antarac.com' style={{width:'70%'}} />
+          <ContactUsCard icon={locationIcon} mainInfo={'Address'} subInfo='Visit us.' contactDetails='View on Maps' style={{width:'70%'}} />
         </div>
       </main>
       <footer className={styles.footer}>
