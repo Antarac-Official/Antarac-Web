@@ -105,6 +105,7 @@ body {
   font-size: clamp(7px, 1vw, 14px);
   font-family: 'Inter', sans-serif;
   color: #737373;
+  text-align: center;
 }
 
 .formInputContainer {
@@ -142,13 +143,13 @@ body {
 
 
 .footerContainer {
-  height: 54px;
+  height: 64px;
   border-top: 1px solid #DEDEDF;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 16px 0px 16px;
+  padding: 0px 38px 0px 38px;
   position: relative;
 }
 
@@ -236,7 +237,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: clamp(9px, 2.5vw, 16px);
+    font-size: clamp(14px, 2.5vw, 20px);
     padding-left: 12px;
     white-space: nowrap;
   }
@@ -250,11 +251,11 @@ body {
   }
 
   .formDescriptionContainer {
-    width: 55%;
+    width: 59.1%;
   }
 
   .formDescription {
-    font-size: clamp(7px, 2vw, 14px);
+    font-size: clamp(8px, 2vw, 14px);
   }
 
   .formInput {
@@ -264,6 +265,7 @@ body {
   .submitButton {
     padding-left: 15px;
     padding-right: 15px;
+    font-size: 16px;
   }
 
   .footerContainer {
