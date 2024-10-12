@@ -15,7 +15,7 @@
 }
 
 .logo {
-  width: 50%;
+  width: 30%;
   max-width: 200px;
   height: auto;
 }
@@ -39,7 +39,7 @@
   position: absolute;
   background-color: white;
   font-family: 'Inter', sans-serif;
-  font-size: clamp(30px, 1.5vw, 30px);
+  font-size: clamp(60px, 1.5vw, 60px);
   padding: 0px 20px 0px 20px;
   font-weight: 600;
 }
@@ -108,6 +108,10 @@
 
   .contactusContainer {
     width: 100%;
+  }
+
+  .contactusText {
+    font-size: clamp(40px, 1.5vw, 40px);
   }
 
   .cardContainer {

@@ -196,6 +196,7 @@ body {
   .insideMain {
     flex-direction: column;
     padding: 0px;
+    padding-top: 60px;
     gap: 40px;
   }
 
