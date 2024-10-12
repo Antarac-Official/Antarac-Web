@@ -116,7 +116,7 @@
   }
 
   .footerContainer {
-    height: 280px;
+    height: 330px;
     padding: 0px;
   }
 
@@ -126,17 +126,19 @@
     width: 80%;
     gap: 40px;
     padding: 40px;
+    margin-left: 40px;
   }
 
   .footerRightInfo {
     margin: 43px;
+    margin-left: 80px;
     position: absolute;
-    bottom: 60px;
+    bottom: 110px;
   }
 
   .footerLeftInfo {
     position: absolute;
-    padding-bottom: 40px;
+    padding-bottom: 75px;
     bottom: 0px;
     width: 100%;
     display: flex;
