@@ -61,7 +61,7 @@ body {
 
 .rightInfo {
   font-weight: 400;
-  font-size: clamp(16px, 2.5vw, 32px);
+  font-size: clamp(14px, 2vw, 26px);
   font-family: 'Inter', sans-serif;
 }
 
@@ -149,6 +149,7 @@ body {
   font-size: 16px;
   color: #B2B2B2;
   font-weight: 500;
+  font-family: 'Inter', sans-serif;
 }
 
 .footerCenterInfo {
@@ -165,6 +166,7 @@ body {
   color: #B2B2B2;
   text-decoration: none;
   font-weight: 500;
+  font-family: 'Inter', sans-serif;
 }
 
 .footerRightInfo {
