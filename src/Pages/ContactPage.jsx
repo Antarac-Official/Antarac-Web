@@ -30,7 +30,7 @@ const ContactPage = () => {
             <a href="" className={styles.footerNavText}>Careers</a>
             <Link to="/contact" className={styles.footerNavText} style={{ color: 'black' }}>Contact</Link>
           </div>
-          <div className={styles.footerRightInfo}>
+          <div className={styles.footerRightInfo} onClick={() => { window.location.href = 'https://www.linkedin.com/company/antarac-app' }}>
             <img src={linkedinLogo} alt="Linkedin Logo" className={styles.linkedinLogo} />
           </div>
         </div>

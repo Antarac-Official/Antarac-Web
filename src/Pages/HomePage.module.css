@@ -169,6 +169,8 @@ body {
 
 .footerRightInfo {
   height: 18px;
+  cursor: pointer;
+  z-index: 1;
 }
 
 .linkedinLogo {
