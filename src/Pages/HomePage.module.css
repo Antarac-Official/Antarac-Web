@@ -31,7 +31,7 @@ body {
 }
 
 .mockupDesktop {
-  width: 80%;
+  width: 100%;
   height: auto;
   max-width: 589.95px;
 }
@@ -54,7 +54,7 @@ body {
 }
 
 .rightLogoContainer {
-  width: 50%;
+  width: 65%;
   max-width: 460px;
   height: auto;
 }
@@ -87,6 +87,7 @@ body {
   padding-left: 8px;
   font-family: 'Inter', sans-serif;
   color: #737373;
+  font-weight: 300;
   font-size: clamp(7px, 1.5vw, 14px);
 }
 
@@ -224,6 +225,10 @@ body {
     align-items: center;
   }
 
+  .rightLogoContainer{
+    width: 50%;
+  }
+
   .rightInfo {
     text-align: center;
     padding: 40px;
@@ -237,7 +242,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: clamp(14px, 2.5vw, 20px);
+    font-size: clamp(18px, 2.5vw, 24px);
     padding-left: 12px;
     white-space: nowrap;
   }
@@ -247,7 +252,7 @@ body {
   }
 
   .formContainer {
-    padding: 0px 40px 40px 40px;
+    padding: 20px 40px 100px 40px;
   }
 
   .formDescriptionContainer {
