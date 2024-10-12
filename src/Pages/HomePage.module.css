@@ -71,7 +71,7 @@ body {
 
 .availableSoonStrik {
   height: 2px;
-  background-color: #00C2ED;
+  background-color: #737373;
   flex-grow: 1;
 }
 
@@ -82,7 +82,7 @@ body {
   letter-spacing: 8px;
   padding-left: 8px;
   font-family: 'Inter', sans-serif;
-  color: #00C2ED;
+  color: #737373;
   font-size: clamp(7px, 1.5vw, 14px);
 }
 
@@ -96,9 +96,14 @@ body {
 }
 
 .formDescription {
-  font-size: clamp(7px, 2.5vw, 14px);
+  font-size: clamp(7px, 1vw, 14px);
   font-family: 'Inter', sans-serif;
   color: #737373;
+}
+
+.formInputContainer {
+  display: flex;
+  align-items: center;
 }
 
 .formInput {
@@ -113,7 +118,7 @@ body {
 .submitButton {
   color: white;
   background-color: black;
-  height: 31px;
+  height: 32px;
   border: none;
   padding-left: 10px;
   padding-right: 10px;
@@ -166,6 +171,64 @@ body {
 
 /* Mobile version */
 @media (width <=700px) {
+
+  .insideMain {
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  .mainLeftContainer {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mainRightContainer {
+    width: 100%;
+  }
+
+  .insideRightContainer {
+    align-items: center;
+  }
+
+  .rightInfo {
+    text-align: center;
+  }
+
+  .availableSoonContainer {
+    width: 100%;
+  }
+
+  .availableSoonText {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(9px, 2.5vw, 16px);
+    padding-left: 12px;
+    white-space: nowrap;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .formDescriptionContainer {
+    width: 65%;
+  }
+
+  .formDescription {
+    font-size: clamp(7px, 2vw, 14px);
+  }
+
+  .formInput {
+    width: 70%;
+  }
+
+  .submitButton {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .footerContainer {
     height: 230px;
     padding: 0px;
