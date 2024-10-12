@@ -61,7 +61,7 @@ body {
 
 .rightInfo {
   font-weight: 400;
-  font-size: clamp(14px, 2vw, 26px);
+  font-size: clamp(16px, 2vw, 26px);
   font-family: 'Inter', sans-serif;
 }
 
@@ -95,10 +95,10 @@ body {
   border-radius: 24px 24px 0px 0px;
   background-color: #EEEEEF;
   padding: 12px 18px 12px 18px;
-  width: 57%;
+  width: 58%;
   max-width: 413.95px;
   height: 20px;
-  transform: translate(0%, 10px);
+  transform: translate(0%, 6px);
 }
 
 .formDescription {
@@ -113,24 +113,31 @@ body {
 }
 
 .formInput {
-  height: 22px;
-  padding: 4px 8px 4px 8px;
-  border-radius: 8px 0px 0px 8px;
+  height: 32px;
+  padding: 4px 8px 4px 14px;
+  border-radius: 12px 0px 0px 12px;
   border: 1px solid black;
   width: 60%;
   max-width: 413.95px;
   z-index: 1;
 }
 
+.formInput::placeholder {
+  font-family: 'Inter', sans-serif;
+  color: #B2B2B2;
+}
+
 .submitButton {
   color: white;
   background-color: black;
-  height: 32px;
+  height: 42px;
   border: none;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 0px 8px 8px 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 0px 12px 12px 0px;
   z-index: 1;
+  font-size: 20px;
+  white-space: nowrap;
 }
 
 
@@ -243,7 +250,7 @@ body {
   }
 
   .formDescriptionContainer {
-    width: 64.5%;
+    width: 55%;
   }
 
   .formDescription {
