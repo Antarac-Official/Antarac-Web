@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './index.module.css';
 
-const ContactUsCard = ({ icon, mainInfo, subInfo, contactDetails, style }) => {
+const ContactUsCard = ({ icon, mainInfo, subInfo, contactDetails, style, onClickUrl }) => {
+  const handleClick = () => window.location.href = onClickUrl;
   return (
     <div className={styles.container} style={style}>
       <div className={styles.iconContainer}>
@@ -11,7 +12,7 @@ const ContactUsCard = ({ icon, mainInfo, subInfo, contactDetails, style }) => {
         <div className={styles.mainInfo}>{mainInfo}</div>
         <div className={styles.subInfo}>{subInfo}</div>
       </div>
-      <div className={styles.contactDetails}>{contactDetails}</div>
+      <div className={styles.contactDetails} onClick={handleClick}>{contactDetails}</div>
     </div>
   );
 };

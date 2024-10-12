@@ -18,9 +18,9 @@ const ContactPage = () => {
           <div className={styles.contactusText}>Contact Us</div>
         </div>
         <div className={styles.cardContainer}>
-          <ContactUsCard icon={phoneIcon} mainInfo={'Call'} subInfo='All days 11am to 5pm.' contactDetails='+91 91102 68071'style={{width:'70%'}} />
-          <ContactUsCard icon={mailIcon} mainInfo={'Email'} subInfo={`Let's connect.`} contactDetails='admin@antarac.com' style={{width:'70%'}} />
-          <ContactUsCard icon={locationIcon} mainInfo={'Address'} subInfo='Visit us.' contactDetails='View on Maps' style={{width:'70%'}} />
+          <ContactUsCard icon={phoneIcon} mainInfo={'Call'} subInfo='All days 11am to 5pm.' contactDetails='+91 91102 68071' onClickUrl='tel:+919110268071' style={{ width: '70%' }} />
+          <ContactUsCard icon={mailIcon} mainInfo={'Email'} subInfo={`Let's connect.`} contactDetails='admin@antarac.com' onClickUrl='mailto:admin@antarac.com' style={{ width: '70%' }} />
+          <ContactUsCard icon={locationIcon} mainInfo={'Address'} subInfo='Visit us.' contactDetails='View on Maps' onClickUrl='https://maps.app.goo.gl/j4JFmt7XzDRxMJmN6' style={{ width: '70%' }} />
         </div>
       </main>
       <footer className={styles.footer}>
