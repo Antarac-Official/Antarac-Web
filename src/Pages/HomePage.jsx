@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import styles from './HomePage.module.css'
 import mockupDesktop from '../assets/mockupDesktop.png';
+import mockupMobile from '../assets/mockupMobile.png';
 import antaracFullLogo from '../assets/fullLogo.svg';
 import linkedinLogo from '../assets/linkedinLogo.svg';
 
@@ -19,6 +20,7 @@ function HomePage() {
         <div className={styles.insideMain}>
           <div className={styles.mainLeftContainer}>
             <img src={mockupDesktop} alt="App mockup image" className={styles.mockupDesktop} />
+            <img src={mockupMobile} alt="App mockup image" className={styles.mockupMobile} />
           </div>
           <div className={styles.mainRightContainer}>
             <div className={styles.insideRightContainer}>
