@@ -182,7 +182,7 @@ body {
 
   .insideMain {
     flex-direction: column;
-    padding: 40px;
+    padding: 0px;
     gap: 40px;
   }
 
@@ -214,6 +214,7 @@ body {
 
   .rightInfo {
     text-align: center;
+    padding: 40px;
   }
 
   .availableSoonContainer {
@@ -233,8 +234,12 @@ body {
     width: 100%;
   }
 
+  .formContainer {
+    padding: 0px 40px 40px 40px;
+  }
+
   .formDescriptionContainer {
-    width: 65%;
+    width: 64.5%;
   }
 
   .formDescription {

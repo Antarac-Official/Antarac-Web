@@ -30,13 +30,15 @@ function HomePage() {
                 <div className={styles.availableSoonStrik}></div>
                 <div className={styles.availableSoonText}>AVAILABLE SOON</div>
               </div>
-              <form onSubmit={handleSubmit} className={styles.form}>
-                <div className={styles.formDescriptionContainer}>
-                  <div className={styles.formDescription}>Be the first to experience. No spams. Promise!</div>
-                </div>
-                <div className={styles.formInputContainer}>
-                  <input value={value} onChange={(e) => setValue(e.target.value)} type="text" placeholder="Enter your email" className={styles.formInput} />
-                  <button onSubmit={handleSubmit} className={styles.submitButton}>Notify me</button>
+              <form onSubmit={handleSubmit} className={styles.form} >
+                <div className={styles.formContainer}>
+                  <div className={styles.formDescriptionContainer}>
+                    <div className={styles.formDescription}>Be the first to experience. No spams. Promise!</div>
+                  </div>
+                  <div className={styles.formInputContainer}>
+                    <input value={value} onChange={(e) => setValue(e.target.value)} type="text" placeholder="Enter your email" className={styles.formInput} />
+                    <button onSubmit={handleSubmit} className={styles.submitButton}>Notify me</button>
+                  </div>
                 </div>
               </form>
             </div>
