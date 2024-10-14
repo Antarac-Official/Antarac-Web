@@ -27,7 +27,7 @@ const ContactPage = () => {
         <div className={styles.footerContainer}>
           <div className={styles.footerLeftInfo}>© 2024 Antarac Social Pvt Ltd</div>
           <div className={styles.footerCenterInfo}>
-            <a href="" className={styles.footerNavText}>Careers</a>
+            {/* <a href="" className={styles.footerNavText}>Careers</a> */}
             <Link to="/contact" className={styles.footerNavText} style={{ color: 'black' }}>Contact</Link>
           </div>
           <div className={styles.footerRightInfo} onClick={() => { window.location.href = 'https://www.linkedin.com/company/antarac-app' }}>

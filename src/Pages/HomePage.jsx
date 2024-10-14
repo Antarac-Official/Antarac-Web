@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import styles from './HomePage.module.css'
 import mockupDesktop from '../assets/mockupDesktop.png';
@@ -8,6 +8,15 @@ import linkedinLogo from '../assets/linkedinLogo.svg';
 
 function HomePage() {
   const [value, setValue] = useState('')
+
+  // useEffect(() => {
+  //   const pathname = window.location.pathname;
+
+  //   if (pathname === '/contact-us') window.location.href = 'https://antarac.com/contact';
+  //   else if (pathname === '/terms-of-service') window.location.href = 'https://theactivityapp.framer.website/terms';
+  //   else if (pathname === '/privacy-policy') window.location.href = 'https://theactivityapp.framer.website/privacy';
+  //   // else window.location.href = 'https://antarac.com/'
+  // }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -49,7 +58,7 @@ function HomePage() {
         <div className={styles.footerContainer}>
           <div className={styles.footerLeftInfo}>© 2024 Antarac Social Pvt Ltd</div>
           <div className={styles.footerCenterInfo}>
-            <a href="" className={styles.footerNavText}>Careers</a>
+            {/* <a href="" className={styles.footerNavText}>Careers</a> */}
             <Link to="/contact" className={styles.footerNavText}>Contact</Link>
           </div>
           <div className={styles.footerRightInfo} onClick={() => { window.location.href = 'https://www.linkedin.com/company/antarac-app' }}>

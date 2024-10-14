@@ -275,7 +275,8 @@ body {
   }
 
   .footerContainer {
-    height: 330px;
+    /* height: 330px; if includes careers */
+    height: 280px;
     padding: 0px;
   }
 
