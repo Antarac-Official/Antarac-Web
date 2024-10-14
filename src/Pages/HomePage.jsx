@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
+import axios from "axios";
 import styles from './HomePage.module.css'
 import mockupDesktop from '../assets/mockupDesktop.png';
 import mockupMobile from '../assets/mockupMobile.png';
@@ -20,7 +21,16 @@ function HomePage() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log('submited', value)
+
+    axios.post('https://script.google.com/macros/s/AKfycby1D1N_YNqHfKNp6rKEPwlhA-GK8e99x-IoaJphUyC36Y6j2Teb8Roy1v5Fs1vnPS4hkw/exec', new URLSearchParams({ email: value }), { headers: { 'Content-Type': 'application/x-www-form-urlencoded' } })
+      .then(() => {
+        console.log('Email registered successfully')
+      }).catch((reject) => {
+        console.log('Error', reject)
+      })
+
+    alert("You'll be notified, thank you for your Email.")
+    setValue('')
   }
 
   return (
