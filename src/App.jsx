@@ -1,19 +1,15 @@
-import { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './Pages/HomePage';
+import ContactPage from './Pages/ContactPage'
 
 function App() {
-
-  useEffect(() => {
-    const pathname = window.location.pathname;
-
-    if (pathname === '/') window.location.href = 'https://antarac.framer.website/';
-    else if (pathname === '/contact-us') window.location.href = 'https://antarac.framer.website/contact';
-    else if (pathname === '/terms-of-service') window.location.href = 'https://antarac.framer.website/terms';
-    else if (pathname === '/privacy-policy') window.location.href = 'https://antarac.framer.website/privacy';
-    else window.location.href = 'https://antarac.framer.website/'
-  }, []);
-
   return (
-    <></>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
+    </Router>
   );
 }
 

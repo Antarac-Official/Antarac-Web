@@ -1,0 +1,32 @@
+.container{
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 20px;
+}
+.icon{
+  height: 40px;
+}
+.infoContainer{
+  flex-direction: column;
+  display: flex;
+  gap:8px;
+  padding: 12px 0px 18px 0px;
+
+}
+.mainInfo{
+  font-size: 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+.subInfo{
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+}
+.contactDetails{
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  text-decoration: underline;
+  cursor: pointer;
+}
